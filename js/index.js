@@ -1,12 +1,11 @@
 console.log('Loaded index.js');
 
-// js/index.js
 async function fetchFarms() {
-  const { data, error } = await supabase.from('farms').select('*');
+  const { data, error } = await window.client.from('farms').select('*');
   if (error) {
-    console.error('Error fetching data:', error);
+    console.error('Error fetching farms:', error);
   } else {
-    console.log('Data fetched successfully:', data);
+    console.log('Farms data:', data);
   }
 }
 

@@ -8,22 +8,13 @@
 <body>
   <h1>Fig Tracker</h1>
   <p>Select a date to continue.</p> 
-  <script>
-    console.log('Hello from inline script!');
-  </script>
 
-  <!-- Load Supabase first -->
+  <!-- Load Supabase SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-  <!-- Then load db.js, which depends on Supabase being defined -->
+  <!-- Load app's DB setup -->
   <script src="js/db.js"></script>
-  <!-- Finally load the main code -->
+  <!-- Load app's logic -->
   <script src="js/index.js"></script>
-
-  <script>
-    console.log('Hello from inline script!');
-    console.log('Supabase: ', supabase);
-  </script>
 
 </body>
 </html>
-
