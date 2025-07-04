@@ -7,13 +7,17 @@ async function fetchFarms() {
   } else {
     console.log('Farms data:', data);
 
-    const farmsList = document.createElement('ul');
     data.forEach(farm => {
-      const listItem = document.createElement('li');
-      listItem.textContent = farm.name;
-      farmsList.appendChild(listItem);
+      console.log(farm); // inspect structure
     });
-    document.body.appendChild(farmsList);
+    
+    // const farmsList = document.createElement('ul');
+    // data.forEach(farm => {
+    //   const listItem = document.createElement('li');
+    //   listItem.textContent = farm.name;
+    //   farmsList.appendChild(listItem);
+    // });
+    // document.body.appendChild(farmsList);
   }
 }
 
